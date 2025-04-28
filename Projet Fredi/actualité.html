@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Barre de navigation */
+        nav {
+            background-color: #e60000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Bannière */
+        .banner {
+            background: url('https://source.unsplash.com/1200x400/?sport') center/cover;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Conteneur principal */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Grille des actualités */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-card-content {
+            padding: 15px;
+        }
+
+        .news-card h2 {
+            font-size: 20px;
+            color: #e60000;
+        }
+
+        .news-card .date {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .news-card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e60000;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #b50000;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<header>
+    <h1> FREDI </h1>
+    <nav>
+        <ul>
+            <li><a href="acceuil.html">ACCUEIL</a></li>
+            <li><a href="actualité.html">ACTUALITÉ</a></li>
+            <li><a href="#">CLUBS COMITÉ ET LES LIGUES</a></li>
+            <li><a href="#">PRATIQUER </a></li>
+            <li><a href="planning.html">PLANNING</a></li>
+            <li><a href="connexionouinscription.html">MON ESPACES </a></li>
+            <li><a href="A propos.html">A PROPOS DE NOUS </a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <nav>🏆 FREDI - ACTUALITÉS SPORTIVES</nav>
+
+    <div class="banner">
+        ⚽🏀🏈 ACTUALITÉS SPORTIVES - DERNIÈRES INFOS 🏉🎾🏐
+    </div>
+
+    <div class="container">
+        <div class="news-grid">
+
+            <!-- Actu 1 -->
+            <div class="news-card">
+                <img src="https://source.unsplash.com/600x400/?soccer" alt="Football">
+                <div class="news-card-content">
+                    <h2>⚽ Victoire écrasante du FC Lorraine</h2>
+                    <p class="date">Publié le 22 mars 2025</p>
+                    <p>Le FC Lorraine s'impose 4-0 contre son rival régional. Un match plein d’émotions avec un doublé de leur attaquant vedette !</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+
+            <!-- Actu 2 -->
+            <div class="news-card">
+                <img src="https://source.unsplash.com/600x400/?basketball" alt="Basket">
+                <div class="news-card-content">
+                    <h2>🏀 Le championnat de basket bat son plein</h2>
+                    <p class="date">Publié le 20 mars 2025</p>
+                    <p>Les phases finales commencent bientôt. Qui sera sacré champion cette saison ? Analyse des forces en présence.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+
+            <!-- Actu 3 -->
+            <div class="news-card">
+                <img src="https://source.unsplash.com/600x400/?tennis" alt="Tennis">
+                <div class="news-card-content">
+                    <h2>🎾 Retour gagnant pour Pierre Dubois</h2>
+                    <p class="date">Publié le 18 mars 2025</p>
+                    <p>Après une blessure, le jeune talent français s’offre une belle victoire en tournoi. Une performance prometteuse !</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+
+            <!-- Actu 4 -->
+            <div class="news-card">
+                <img src="https://source.unsplash.com/600x400/?rugby" alt="Rugby">
+                <div class="news-card-content">
+                    <h2>🏉 Le XV de Lorraine prêt pour le choc</h2>
+                    <p class="date">Publié le 15 mars 2025</p>
+                    <p>À quelques jours du grand match contre Bordeaux, l’équipe régionale peaufine sa préparation physique et mentale.</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Projet FREDI - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>

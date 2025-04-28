@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styleinscription.css">
+</head>
+<body>
+    
+   <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-6"> 
+<h1 class = "text-center">JE CRÉE MON COMPTE FREDI</h1>
+<br>
+<br> 
+<h2 >Informations du compte</h2>
+
+<form method="POST" action="inscription.php">
+
+    <label for="pseudo">Pseudo*</label>
+    <input type="text" name="pseudo" id="pseudo" placeholder="Entrez votre pseudo..."required>
+    <br>
+    <label for="email">Adresse mail*</label>
+    <input type="text" name="email" id="email" placeholder="Entrez votre adresse mail..."required>
+    <br>
+    <label for="mdp">Mot de passe*(au moins 1 majuscule, 1 chiffre et 1 caractère spécial)</label>
+    <input type="password" name="mdp" id="mdp" placeholder="Entrez votre mot de passe..." maxlength="10" required
+    pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[&@#!]).{6,10}$"
+    title="Le mot de passe doit contenir entre 6 et 10 caractères, avec au moins une majuscule, un chiffre et un caractère spécial (&, @, #,!,.,/)">
+    <br>
+    <label for="nom">Nom*</label>
+    <input type="text" name="nom" id="nom" placeholder="Entrez votre nom...">
+    <br>
+    <label for="prenom">Prenom*</label>
+    <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prenom..."required>
+    <br>
+    <label for="dtnaissance">Date de naissance*</label>
+    <input type="date" name="dtnaissance" id="dtnaissance" placeholder="jj/mm/aaaa"required>
+    <br>
+    <label for="genre">Genre*</label>
+    <input type="text" name="genre" id="genre" placeholder="Entrez votre genre..."required>
+    <br>
+    <label for="ligue">Ligue*</label>
+    <input type="text" name="ligue" id="ligue" placeholder="Indiquez votre ligue sportive..."required>
+    <br>
+    <label for="club">Club*</label>
+    <input type="text" name="club" id="club" placeholder="Entrez votre club..."required>
+    <br>
+    <label for="licence">Numéro de licence*</label>
+    <input type="text" name="licence" id="licence" placeholder="Entrez votre numéro de licence..."required>
+    <br>
+    <input type="submit" value="se connecter" name="ok">
+</form>
+  
+    </div>  
+ </div>    
+    </div>   
+
+
+</body> 
+</html>
+    
+</body>
+</html>
