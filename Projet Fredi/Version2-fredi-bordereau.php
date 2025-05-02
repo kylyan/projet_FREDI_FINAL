@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   try {
       // Insertion dans la table existante
       $stmt = $connexion->prepare("INSERT INTO `lignes-frais` 
-                                  (`adresse-mail`, `date`, `motif`, `trajet`, `km`, `cout-peage`, `cout-hebergement`, `km-valldé`, `pesge-valldé`, `repas-valldé`, `hebergement-valldé`) 
+                                  (`adresse-mail`, `date`, `motif`, `trajet`, `km`, `cout-peage`, `cout-hebergement`, `km-validé`, `peage-validé`, `repas-validé`, `hebergement-validé`)  
                                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
       
       for ($i = 0; $i < count($_POST['date']); $i++) {
