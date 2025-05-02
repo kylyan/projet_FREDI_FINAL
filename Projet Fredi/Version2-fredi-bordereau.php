@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
     </div>
     
-    <form action="" method="post">
+    <form action="generer_recu.php" method="post">
         <div class="header">
             <p class="changeColor">Je soussigné(e): <input type="text" name="nom[]" placeholder="Votre nom ici"> 
             Demeurant: <input type="text" name="adresse[]" placeholder="Votre adresse ici"></p>
@@ -132,7 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         
         <button type="submit">Soumettre</button>
-        <button type="button" onclick="window.location.href='generer_recu.php'">Générer et télécharger le reçu</button>
+        <button type="submit" name="generer_recu">Soumettre et générer le reçu</button>
     </form>
     </div>
 
