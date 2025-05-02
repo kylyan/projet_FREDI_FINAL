@@ -67,4 +67,4 @@ if (isset($error)) {
     echo '<div class="error">' . htmlspecialchars($error) . '</div>';
 }
 
-include('connexionouinscription.html');
+include('connexionouinscription.php');
