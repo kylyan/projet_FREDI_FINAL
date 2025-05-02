@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['connexion'])) {
                 session_regenerate_id(true);
 
                 // Redirection
-                header('Location: accueil.php');
+                header('Location: actualité.html');
                 exit();
             } else {
                 $error = "Identifiants incorrects !";
